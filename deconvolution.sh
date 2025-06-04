@@ -8,10 +8,10 @@ movies=("500daysofsummer" "12yearsaslave" "backtothefuture" "citizenfour" "littl
 
 # Set Directories
 # Annotations
-annotation_dir="/data/carcher/annotations" #these are the 1D files- timing files of the 'stimuli' ***have to change files in here 
+annotation_dir="/data/carcher/nndb/annotations" #these are the 1D files- timing files of the 'stimuli' ***have to change files in here 
 
 # Output
-output_dir="/data/carcher/" 
+output_dir="/data/carcher/nndb/deconoutput" 
 
 for perp in "${perps[@]}"; do 
     folder_name="${perp}"
