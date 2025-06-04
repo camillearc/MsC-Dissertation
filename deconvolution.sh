@@ -28,7 +28,7 @@ for perp in "${perps[@]}"; do
                 echo "# $perp: Doing 3dDeconvolve for $movie"
                 echo "####################################################################################################"
 
-				echo "Output 1D file: ${perp}_${de_prefix}_${de_suffix}.1D"
+		echo "Output 1D file: ${perp}_${de_prefix}_${de_suffix}.1D"
                 echo "Output Coefficients bucket file: ${perp}_${de_prefix}_coefficients_${de_suffix}.nii.gz"
                 echo "Output Stats bucket file: ${perp}_${de_prefix}_stats_${de_suffix}.nii.gz"
                 
@@ -74,7 +74,7 @@ for perp in "${perps[@]}"; do
 				-stim_times 30 "$annotation_dir/${movie}_social_matches.1D" 'TENT(0, 15, 16)' -stim_label 30 soc_matches \
 				-stim_times 31 "$annotation_dir/${movie}_third.1D" 'TENT(0, 15, 16)' -stim_label 31 third \
 				-stim_times 32 "$annotation_dir/${movie}_third_matches.1D" 'TENT(0, 15, 16)' -stim_label 32 third_matches \
-                -stim_times 33 "$annotation_dir/${movie}_other_words.1D"   'TENT(0, 15, 16)' -stim_label 33 others \
+                		-stim_times 33 "$annotation_dir/${movie}_other_words.1D"   'TENT(0, 15, 16)' -stim_label 33 others \
                             -num_glt 40 \
                     		-gltsym 'SYM: +cognitive[0] -cog_matches[0]'   -glt_label 1 cog_vs_matches \
                     		-gltsym 'SYM: +cognitive[0] -others[0]'     -glt_label 2 cog_vs_others \
