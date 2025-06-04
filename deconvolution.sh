@@ -18,7 +18,7 @@ for perp in "${perps[@]}"; do
     file_path="/Users/camillearcher/3dDeconvolveTesting/$folder_name" 
     mask_file="${perp}_t1w_mask_epi_anat.nii.gz" 
     for movie in "${movies[@]}"; do
-        func_file="${perp}_task-${movie}_bold_blur_no_censor_ica.nii.gz" #using blur no censor for the regular convolution step
+        func_file="${perp}_task-${movie}_bold_blur_censor_ica.nii.gz" #using blur and censor for the deconvolution step
         de_prefix="word_categories" 
         de_suffix="convolved"
 
