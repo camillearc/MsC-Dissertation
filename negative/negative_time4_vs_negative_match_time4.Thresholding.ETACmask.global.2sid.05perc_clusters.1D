@@ -1,0 +1,20 @@
+#
+#  Cluster report 
+#[ Dataset prefix      = negative_time4_vs_negative_match_time4.Thresholding.ETACmask.global.2sid.05perc.nii.gz ]
+#[ Threshold vol       = [0] ]
+#[ Supplement dat vol  = [0] ]
+#[ Option summary      = bisided,-0.0001,0.0001,clust_nvox,40,NN2 ]
+#[ Threshold value(s)  = left-tail thr=-0.000100;  right-tail thr=0.000100 ]
+#[ Aux. stat. info.    = not a stat! ]
+#[ Nvoxel threshold    = 40;  Volume threshold = 1080.000 ]
+#[ Single voxel volume = 27.000 (microliters) ]
+#[ Neighbor type, NN   = 2 ]
+#[ Voxel datum type    = byte ]
+#[ Voxel dimensions    = 3.000 mm X 3.000 mm X 3.000 mm ]
+#[ Coordinates Order   = RAI ]
+#[ Mean and SEM based on signed voxel intensities ]
+#
+#Volume  CM RL  CM AP  CM IS  minRL  maxRL  minAP  maxAP  minIS  maxIS    Mean     SEM    Max Int  MI RL  MI AP  MI IS
+#------  -----  -----  -----  -----  -----  -----  -----  -----  -----  -------  -------  -------  -----  -----  -----
+    341   34.9   63.6   -3.1   10.5   58.5   37.5   85.5  -31.5   19.5        1        0        1   25.5   76.5  -31.5 
+     72  -15.0   93.3   20.8  -28.5   -7.5   88.5  100.5    7.5   34.5        1        0        1  -13.5   91.5    7.5 
