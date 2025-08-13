@@ -1,0 +1,104 @@
+================================================================================
+PER-CATEGORY SVM ANALYSIS RESULTS
+================================================================================
+
+SUMMARY:
+--------
+Total subjects analyzed: 86
+High depression: 41, Low depression: 45
+Categories analyzed: 7
+
+CATEGORY RANKING (by Cross-Validation Accuracy):
+---------------------------------------------
+            CV accuracy + STD  LOO accuracy CV p value   LOO p value
+    negative: 0.5699 ± 0.0942 (LOO: 0.5814, CV-p=0.1479, LOO-p=0.0792) 
+        past: 0.5477 ± 0.0934 (LOO: 0.6047, CV-p=0.2148, LOO-p=0.0495) *
+    positive: 0.5222 ± 0.0737 (LOO: 0.4767, CV-p=0.4186, LOO-p=0.6832) 
+   cognitive: 0.4987 ± 0.1133 (LOO: 0.4070, CV-p=0.5365, LOO-p=0.9307) 
+    physical: 0.4895 ± 0.0999 (LOO: 0.4767, CV-p=0.5854, LOO-p=0.6931) 
+     present: 0.4654 ± 0.0386 (LOO: 0.5581, CV-p=0.6883, LOO-p=0.2277) 
+       first: 0.4405 ± 0.1140 (LOO: 0.4070, CV-p=0.8531, LOO-p=0.9307) 
+
+       CV and LOO agree that negative and past are the two most capable predictors
+       They also agree that first is the least predictive (in LOO, this is tied with cognitive)
+
+DETAILED RESULTS BY CATEGORY:
+------------------------------
+
+COGNITIVE CATEGORY:
+-------------------
+  Best hyperparameters: {'svm__C': 0.1}
+  Cross-validation accuracy: 0.4987 ± 0.1133
+  Leave-One-Out accuracy: 0.4070
+  5-fold CV permutation test p-value: 0.5365 (significant: No)
+  LOO permutation test p-value: 0.9307 (significant: No)
+  Number of features: 128
+
+FIRST CATEGORY:
+---------------
+  Best hyperparameters: {'svm__C': 100}
+  Cross-validation accuracy: 0.4405 ± 0.1140
+  Leave-One-Out accuracy: 0.4070
+  5-fold CV permutation test p-value: 0.8531 (significant: No)
+  LOO permutation test p-value: 0.9307 (significant: No)
+  Number of features: 128
+
+NEGATIVE CATEGORY:
+------------------
+  Best hyperparameters: {'svm__C': 0.1}
+  Cross-validation accuracy: 0.5699 ± 0.0942
+  Leave-One-Out accuracy: 0.5814
+  5-fold CV permutation test p-value: 0.1479 (significant: No)
+  LOO permutation test p-value: 0.0792 (significant: No)
+  Number of features: 128
+
+PHYSICAL CATEGORY:
+------------------
+  Best hyperparameters: {'svm__C': 1}
+  Cross-validation accuracy: 0.4895 ± 0.0999
+  Leave-One-Out accuracy: 0.4767
+  5-fold CV permutation test p-value: 0.5854 (significant: No)
+  LOO permutation test p-value: 0.6931 (significant: No)
+  Number of features: 128
+
+PRESENT CATEGORY:
+-----------------
+  Best hyperparameters: {'svm__C': 10}
+  Cross-validation accuracy: 0.4654 ± 0.0386
+  Leave-One-Out accuracy: 0.5581
+  5-fold CV permutation test p-value: 0.6883 (significant: No)
+  LOO permutation test p-value: 0.2277 (significant: No)
+  Number of features: 128
+
+PAST CATEGORY:
+--------------
+  Best hyperparameters: {'svm__C': 0.1}
+  Cross-validation accuracy: 0.5477 ± 0.0934
+  Leave-One-Out accuracy: 0.6047
+  5-fold CV permutation test p-value: 0.2148 (significant: No)
+  LOO permutation test p-value: 0.0495 (significant: Yes)
+  Number of features: 128
+
+POSITIVE CATEGORY:
+------------------
+  Best hyperparameters: {'svm__C': 100}
+  Cross-validation accuracy: 0.5222 ± 0.0737
+  Leave-One-Out accuracy: 0.4767
+  5-fold CV permutation test p-value: 0.4186 (significant: No)
+  LOO permutation test p-value: 0.6832 (significant: No)
+  Number of features: 128
+
+STATISTICAL SIGNIFICANCE LEGEND:
+--------------------------------
+  *** p < 0.001 (highly significant)
+  **  p < 0.01  (significant)
+  *   p < 0.05  (significant)
+      p ≥ 0.05  (not significant)
+
+BEST PERFORMING CATEGORY:
+-------------------------
+  Negative category achieved the highest CV accuracy
+  Cross-validation accuracy: 0.5699
+  This suggests that negative word patterns are most predictive of depression levels (according to CV). 
+  However, it is not significant. 
+  When looking to LOO, only past is significantly predictive. 
