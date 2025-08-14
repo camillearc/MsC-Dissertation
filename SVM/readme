@@ -1,0 +1,7 @@
+SVM files: 
+
+per_category_analysis_results.txt gives the overall accuracy, p-values, parameters, etc for all categories. Ranks categories by their CV accuracy. 
+
+subject_predictions.csv files contain training predictions used to generate accuracies. 
+
+Other files should likely be explanatory. 
