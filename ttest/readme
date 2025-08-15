@@ -5,15 +5,15 @@ Cluster tables for all t-tests were created through using the following 3dcluste
     3dClusterize \
         -nosum \
         -1Dformat \
-        -inset "$mask" \
+        -inset "$input_file" \
         -idat 0 \
         -ithr 0 \
         -NN 2 \
         -clust_nvox 40 \
         -bisided \
-        -0.0001 0.0001 \
+        -$threshold $threshold \
+        > "$output_file"
 
-Where $mask is the activation file
 
 Table Abbreviations Legend:
     Nvoxel       : Number of voxels in the cluster
