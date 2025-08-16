@@ -1,0 +1,21 @@
+CLUSTER ANALYSIS RESULTS: Positive
+
+Generated on: Sat Aug 16 10:17:37 BST 2025
+
+Early:
+
+No significant clusters found.
+
+Middle:
+
+No significant clusters found.
+
+Late :
+1    33696          52.5   76.5   -4.5   0.0091   0.0322
+2    32400         -52.5   67.5    4.5   0.0087   0.0390
+
+Peak coordinates are in MNI152 space using ETAC multi-thresholding
+
+All :
+1    33696          52.5   76.5   -4.5   0.0046   0.0161
+2    32400         -52.5   67.5    4.5   0.0044   0.0195

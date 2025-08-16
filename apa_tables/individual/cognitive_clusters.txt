@@ -1,0 +1,16 @@
+CLUSTER ANALYSIS RESULTS: Cognitive
+
+Generated on: Sat Aug 16 10:17:36 BST 2025
+
+#    Volume(mm³)      x      y      z     Mean      Max Max Intensity
+-----------------------------------------------------------------
+Early :
+1    3105          -46.5   64.5    7.5  -0.0115  -0.0187
+2    1998          -25.5   61.5   -7.5  -0.0167  -0.0266
+Middle :
+1    3726           25.5   82.5   49.5  -0.0098  -0.0200
+Late :
+1    1620           52.5   40.5    1.5   0.0061   0.0080
+2    1107          -46.5  -52.5   16.5  -0.0062  -0.0096
+
+Peak coordinates are in MNI152 space using ETAC multi-thresholding
