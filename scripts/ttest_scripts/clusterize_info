@@ -1,0 +1,31 @@
+************************************************************************************************************
+Cluster tables for all t-tests were created through using the following 3dclusterize command on all files: 
+************************************************************************************************************
+
+    3dClusterize \
+        -nosum \
+        -1Dformat \
+        -inset "$input_file" \
+        -idat 0 \
+        -ithr 0 \
+        -NN 2 \
+        -clust_nvox 40 \
+        -bisided \
+        -$threshold $threshold \
+        > "$output_file"
+
+
+Table Abbreviations Legend:
+    Nvoxel       : Number of voxels in the cluster
+    CM RL        : Center of mass (CM) for the cluster in the Right-Left direction (i.e., the coordinates for the CM)
+    CM AP        : Center of mass for the cluster in the Anterior-Posterior direction
+    CM IS        : Center of mass for the cluster in the Inferior-Superior direction
+    minRL, maxRL : Bounding box for the cluster, min and max coordinates in the Right-Left direction
+    minAP, maxAP : Min and max coordinates in the Anterior-Posterior direction of the volume cluster
+    minIS, maxIS : Min and max coordinates in the Inferior-Superior direction of the volume cluster
+    Mean         : Mean value for the volume cluster
+    SEM          : Standard Error of the Mean for the volume cluster
+    Max Int      : Maximum Intensity value for the volume cluster
+    MI RL        : Coordinate of the Maximum Intensity value in the Right-Left direction of the volume cluster
+    MI AP        : Coordinate of the Maximum Intensity value in the Anterior-Posterior direction of the volume cluster
+    MI IS        : Coordinate of the Maximum Intensity value in the Inferior-Superior direction of the volume cluster
