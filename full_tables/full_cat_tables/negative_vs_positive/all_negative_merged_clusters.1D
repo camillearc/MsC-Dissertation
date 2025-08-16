@@ -1,0 +1,21 @@
+#
+#  Cluster report 
+#[ Dataset prefix      = all_negative_merged.nii.gz ]
+#[ Threshold vol       = [0] ]
+#[ Supplement dat vol  = [0] ]
+#[ Option summary      = bisided,-0.0001,0.0001,clust_nvox,40,NN2 ]
+#[ Threshold value(s)  = left-tail thr=-0.000100;  right-tail thr=0.000100 ]
+#[ Aux. stat. info.    = not a stat! ]
+#[ Nvoxel threshold    = 40;  Volume threshold = 1080.000 ]
+#[ Single voxel volume = 27.000 (microliters) ]
+#[ Neighbor type, NN   = 2 ]
+#[ Voxel datum type    = float ]
+#[ Voxel dimensions    = 3.000 mm X 3.000 mm X 3.000 mm ]
+#[ Coordinates Order   = RAI ]
+#[ Mean and SEM based on signed voxel intensities ]
+#
+#Volume  CM RL  CM AP  CM IS  minRL  maxRL  minAP  maxAP  minIS  maxIS    Mean     SEM    Max Int  MI RL  MI AP  MI IS
+#------  -----  -----  -----  -----  -----  -----  -----  -----  -----  -------  -------  -------  -----  -----  -----
+    878  -54.8   37.0    2.4  -70.5  -40.5  -10.5   79.5  -31.5   22.5   -0.008  1.3e-04  -0.0322  -61.5   64.5   -4.5 
+    183   47.1   70.6    2.3   31.5   58.5   49.5   82.5  -16.5   19.5  -0.0078  2.6e-04  -0.0233   55.5   73.5    1.5 
+    152  -10.7   80.4    9.1  -19.5    1.5   64.5  100.5  -10.5   25.5  -0.0111  4.9e-04  -0.0353  -13.5   79.5    7.5 
